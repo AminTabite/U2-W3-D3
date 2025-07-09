@@ -31,11 +31,11 @@ const catalogoLibri = function () {
         `
       })
 
-      // Selezioniamo tutti i bottoni dopo che le card sono state generate
+      // Prendo i bottoni dentro le card
       const buttons = document.querySelectorAll(".delete-btn")
       buttons.forEach((bottone) => {
         bottone.addEventListener("click", function () {
-          // Rimuoviamo la colonna (che contiene la card) più vicina al bottone
+          // prendo la colonna più vicina al bottone
           const card = bottone.closest(".col")
           card.remove()
         })
